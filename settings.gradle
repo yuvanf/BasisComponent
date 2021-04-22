@@ -1,0 +1,4 @@
+include ':net'
+include ':base'
+include ':app'
+rootProject.name = "BasisComponent"

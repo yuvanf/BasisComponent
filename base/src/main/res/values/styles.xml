@@ -1,0 +1,45 @@
+<resources>
+
+
+
+    <style name="BottomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@style/BottomDialog.AnimationStyle</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="dialogWindowAlphaAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_animation_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_animation_alpha_out</item>
+    </style>
+
+    <style name="BottomDialog.AnimationStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_animation_move_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_animation_move_out</item>
+    </style>
+
+    <style name="loadingDialog" parent="android:Animation" mce_bogus="1">
+        <item name="android:indeterminateDrawable">@drawable/progess_drawable_blue</item>
+    </style>
+
+    <declare-styleable name="AnimLogoView">
+        <attr name="logoName" format="string" />
+        <attr name="autoPlay" format="boolean" />
+        <attr name="offsetAnimDuration" format="integer" />
+        <attr name="gradientAnimDuration" format="integer" />
+        <attr name="gradientColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="verticalOffset" format="dimension" />
+        <attr name="textPadding" format="dimension" />
+        <attr name="showGradient" format="boolean" />
+    </declare-styleable>
+
+</resources>
